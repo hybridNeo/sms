@@ -32,10 +32,9 @@ int get_st(int n){
 }
 int main(void){
 	int n;
-	cout << "Enter the number of cases\n";
-	
+	cout << "--------Enter the number of cases----------\n";
 	cin >> n;
-	cout << "time in system:\n";
+	cout << "--------time in system:--------------------\n";
 	info result[n];
 	result[0].start1 = 0;
 	result[0].at = 0;
@@ -67,5 +66,7 @@ int main(void){
 	{
 		tot_time += result[i].time;
 	}	
+	cout << "-------------------------------\n";
 	cout << "Avg. Time in system is = " << tot_time/n << endl; 
+	cout << "-------------------------------\n";
 }

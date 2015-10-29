@@ -1,0 +1,15 @@
+class LinearCongruentialGenerator{
+public:
+	double a_,c_,x0_;
+	int m_;
+	LinearCongruentialGenerator(double a,double c,int m,double x0):
+	a_(a),c_(c),m_(m),x0_(x0)
+	{
+
+	}
+
+	int next(){
+		x0_ = ((long long int)(a_ * x0_ + c_)) % m_;
+		return (int)x0_;
+	}
+};
